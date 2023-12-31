@@ -2,7 +2,7 @@
 
 ## Course Objectives
 
-This repository serves as a comprehensive collection of lab solutions and in-class exercises for the "Programming Styles and Idioms" course. The aim is to strengthen programming skills and understanding of fundamental programming language concepts by exploring a multitude of programming styles through constraints imposed on code.
+This repository serves as a comprehensive collection of lab solutions and in-class exercises for the "Programming Styles" course. The aim is to strengthen programming skills and understanding of fundamental programming language concepts by exploring a multitude of programming styles through constraints imposed on code.
 
 ## Course Description
 
@@ -14,7 +14,7 @@ The course embarks on a journey through the landscape of programming languages a
 
 ## Repository Content
 
-- **Lab Solutions:** Each lab focuses on applying multiple programming styles to the TermFrequency task, a fundamental exercise in Natural Language Processing (NLP). Solutions are provided in JavaScript and Java.
+- **Lab Solutions:** Each lab focuses on applying multiple programming styles to the TermFrequency task. Solutions are provided in JavaScript and Java.
 - **In-Class Exercises:** Brief but insightful exercises to understand theoretical concepts, available in Java, JavaScript, and Python.
 
 ## Learning Methods
