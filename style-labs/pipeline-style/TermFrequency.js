@@ -1,9 +1,9 @@
+// Pipeline Style
+
 const fs = require("fs");
 
 function readFile(pathToFile) {
-	// TODO Change
-	return fs.readFileSync("../" + pathToFile, "utf8");
-	//return fs.readFileSync(pathToFile, "utf8");
+	return fs.readFileSync(pathToFile, "utf8");
 }
 
 function cleanText(text) {
