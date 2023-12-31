@@ -85,13 +85,16 @@ public class TermFrequency {
     }
 
     public static void main(String[] args) {
-        //TODO: remove stopwords
         readFile(args[0], text -> cleanText(text, cleanedText -> removeSingleCharWords(cleanedText,
                 noSingleCharText -> toLowerCase(noSingleCharText, lowerCaseText -> splitTextInWords(lowerCaseText,
-                        words -> countWordFrequency(words,
-                                wordsFreq -> sortHashMap(wordsFreq,
-                                        sortedWordsFreq -> sliceHashMap(sortedWordsFreq, Integer.parseInt(args[1]),
-                                                limitWordsFreq -> hashMapToString(limitWordsFreq,
-                                                        stringResult -> System.out.println(stringResult))))))))));
+                        words -> readFile("stop_words.txt", stopText -> cleanText(stopText,
+                                cleanedStopText -> splitTextInWords(cleanedStopText, stopWords -> removeStopWords(words,
+                                        stopWords, cleanedWords -> countWordFrequency(cleanedWords,
+                                                wordsFreq -> sortHashMap(wordsFreq,
+                                                        sortedWordsFreq -> sliceHashMap(sortedWordsFreq,
+                                                                Integer.parseInt(args[1]),
+                                                                limitWordsFreq -> hashMapToString(limitWordsFreq,
+                                                                        stringResult -> System.out
+                                                                                .println(stringResult))))))))))))));
     }
 }
